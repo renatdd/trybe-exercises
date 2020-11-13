@@ -1,4 +1,4 @@
-# pataquÁ's Trybe exercises repository
+# pataquÁ's <img src="https://app.betrybe.com/assets/images/trybe-logo.png" alt="Trybe" width=100> exercises repository
 
 Este repositório é destinado aos exercícios que realizo no curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/).
 
