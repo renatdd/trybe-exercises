@@ -1,0 +1,1 @@
+This is only a random JS script for a git exercise. :stuck_out_tongue_winking_eye:
