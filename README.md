@@ -63,10 +63,10 @@ A seguir, você encontra a descrição de cada um, além do acompanhamento do me
 - [ ] Projeto - JavaScript Testes Unitários
 
 ### Bloco 8: Higher Order Functions do JavaScript ES6
-- [ ] JavaScript ES6 - Higher Order Functions - forEach, find, some, - [ ] every, sort
+- [ ] JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
 - [ ] JavaScript ES6 - Higher Order Functions - map e filter
 - [ ] JavaScript ES6 - Higher Order Functions - reduce
-- [ ] JavaScript ES6 - spread operator, parâmetro rest, destructuring e - [ ] mais
+- [ ] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 - [ ] Projeto - Zoo functions
 
 ### Bloco 9: JavaScript Assíncrono e Promises
