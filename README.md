@@ -4,8 +4,7 @@ Este repositório é destinado aos exercícios que realizo no curso de Desenvolv
 
 ## Blocos do curso
 
-O curso é constituído por 39 blocos que abrangem ... .
-A seguir, você encontra a descrição de cada um, além do acompanhamento do meu processo de evolução através deles. :rocket:
+O curso é constituído por 39 blocos que abrangem fundamentos do desenvolvimento web, front-end, back-end e noções de Ciência da Computação. A seguir, você encontra a descrição de cada um, além do acompanhamento da minha progressão através deles. :rocket:
 
 ### Bloco 1: Unix, Bash e Shell Script 
 - [x] Setup
