@@ -1,10 +1,10 @@
 # pataquÁ's <a href="https://www.betrybe.com/" target='_new'><img src="https://app.betrybe.com/assets/images/trybe-logo.png" alt="Trybe" width=100></a> exercises repository
 
-Este repositório é destinado aos exercícios que realizo no curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/).
+This repository is intended for exercises performed in [Trybe](https://www.betrybe.com/)'s Web Development course.
 
-## Blocos do curso
+## Course Blocks
 
-O curso é constituído por 39 blocos que abrangem fundamentos do desenvolvimento web, front-end, back-end e noções de Ciência da Computação. A seguir, você encontra a descrição de cada um, além do acompanhamento da minha progressão através deles. :rocket:
+The course consists of more than 1,500 hours divided into 39 blocks that cover comprehensive contents in fundamentals of web development, front-end development, back-end development and computer science. Below you can find their descriptions and check my current progress through them. :rocket:
 
 ### Bloco 1: Unix, Bash e Shell Script 
 - [x] Setup
