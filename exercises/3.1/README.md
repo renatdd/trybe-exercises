@@ -1,0 +1,1 @@
+Exercícios do Bloco 3 - Dia 1. Conteúdo: "HTML & CSS - Estruturas de página"
