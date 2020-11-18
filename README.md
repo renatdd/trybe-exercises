@@ -15,12 +15,12 @@ The course consists of more than 1,500 hours divided into 39 blocks that cover c
 
 ### Bloco 2: Git, GitHub e Internet
 - [x] Git & GitHub - O que é e para que serve
-- [ ] Git & GitHub - Entendendo os comandos
-- [ ] Internet - Entendendo como ela funciona
+- [x] Git & GitHub - Entendendo os comandos
+- [x] Internet - Entendendo como ela funciona
 
 ### Bloco 3: Introdução à HTML e CSS
-- [ ] Introdução - HTML & CSS
-- [ ] HTML & CSS - Estruturas de página
+- [x] Introdução - HTML & CSS
+- [x] HTML & CSS - Estruturas de página
 - [ ] HTML & CSS - Primeiros passos em CSS
 - [ ] HTML & CSS - Seletores e posicionamento
 - [ ] HTML Semântico
