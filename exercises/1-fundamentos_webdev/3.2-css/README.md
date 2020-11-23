@@ -1,0 +1,1 @@
+Exercícios do Bloco 3 - Dia 2. Conteúdo: "HTML & CSS - Primeiros passos em CSS"
