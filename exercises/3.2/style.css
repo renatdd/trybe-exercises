@@ -1,0 +1,30 @@
+h1 {
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+body {
+    font-size: 16px;
+}
+ul {
+    background-color: rgb(146, 146, 235);
+}
+li {
+    line-height: 2;
+    font-style: italic;
+    color: white;
+}
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+.red {
+    background-color: red;
+}
+.brown {
+    background-color: brown;
+}
