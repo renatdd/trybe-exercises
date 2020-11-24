@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Soco a 80km/h: Conheça o Stomatopoda</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600;900&family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"> 
   </head>
   <body>
       <header>
-          <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
+          <h1 id="title">Soco a 80km/h: Conheça o Stomatopoda</h1>
       </header>
       <nav>
+          <img id="logo-img" src="https://image.winudf.com/v2/image1/Y3JhZnRzaWNvbnMuaWNvbnBhY2suYTIuYW5pbWFsdW5pb25faWNvbl8xNTU1MzY5MDIwXzA3NQ/icon.png?w=170&fakeurl=1" alt="">
           <ul>
               <li><a href="">Página Inicial</a></li>
               <li><a href="">Sobre</a></li>
@@ -18,38 +22,130 @@
       </nav>
       <main>
           <article>
-              <h2>Fatos sobre o Stomatopoda</h2>
+              <div class="heading-container">
+                  <h2>Fatos sobre os Stomatopoda</h2>
+              </div>
+              <div class="text-box">
+                  <p><em>Stomatopoda</em> (ou estomatópodes) é uma <strong>ordem de crustáceos marinhos que agrupa cerca de 400 espécies</strong> que habitam os litorais de diversas regiões do mundo, inclusive os brasileiros. Apenas no Nordeste, há mais de vinte delas. Tratam-se de animais com características impressionantes que lançam desafios à ciência humana e, até mesmo, inspiram o avanço da nossa tecnologia. A seguir, você vai conhecer fatos sobre esse bicho e entender a razão do fascínio que ele provoca.</p>
+              </div>
               <section>
-                <h3></h3>
-                <table>
-                    <tr>
-                        <th>Reino</th>
-                        <td>Animalia</td>
-                    </tr>
-                    <tr>
-                        <th>Filo</th>
-                        <td>Arthropoda</td>
-                    </tr>
-                    <tr>
-                        <th>Subfilo</th>
-                        <td>Crustacea</td>
-                    </tr>
-                    <tr>
-                        <th>Classe</th>
-                        <td>Malacostraca</td>
-                    </tr>
-                    <tr>
-                        <th>Subclasse</th>
-                        <td>Hoplocarida</td>
-                    </tr>
-                    <tr>
-                        <th>Ordem</th>
-                        <td>Stomatopoda</td>
-                    </tr>
-                </table>
+                <div class="heading-container">
+                    <h3>Afinal, quem são as nossas estrelas?</h3>
+                </div>
+                <div class="text-box">
+                    <img class="right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Odontodactylus_scyllarus1.jpg/800px-Odontodactylus_scyllarus1.jpg" alt="Foto do Odontodactylus scyllarus">
+                    <p> 
+                        Conhecidos como esquilas ou lagosta-boxeadora, no Brasil, também são popularmente chamados de tamarutacas ou lacraias-do-mar. Já na língua inglesa, recebem o nome de <em>mantis shrimps</em>, ou camarões louva-deus. Mas não são nem louva-a-deus, nem lacraias, que pertencem a outros subfilos dos artrópodes  - respectivamente, o <em>Hexapoda</em> e o <em>Myriapoda</em>. São crustáceos como os camarões, mas estão em outra classe, a <em>Malacostraca</em>. Esta, é a mesma das lagostas, com as quais guardam maior proximidade taxonômica e divergem na subclasse - suas saborosas "sósias" pertencem à <em>Phyllocarida</em>.
+                    </p>
+                    <p>
+                        Veja a seguir a <strong>classificação científica</strong> das espécies de estomatópodes:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Reino</th>
+                            <td>Animalia</td>
+                        </tr>
+                        <tr>
+                            <th>Filo</th>
+                            <td>Arthropoda</td>
+                        </tr>
+                        <tr>
+                            <th>Subfilo</th>
+                            <td>Crustacea</td>
+                        </tr>
+                        <tr>
+                            <th>Classe</th>
+                            <td>Malacostraca</td>
+                        </tr>
+                        <tr>
+                            <th>Subclasse</th>
+                            <td>Hoplocarida</td>
+                        </tr>
+                        <tr>
+                            <th>Ordem</th>
+                            <td>Stomatopoda</td>
+                        </tr>
+                    </table>
             </section>
-
+            <section>
+                <div class="heading-container">
+                    <h3>Uma explosão de cores inimagináveis</h3>
+                </div>
+                <div class="text-box">
+                    <img class="left" src="https://critter.science/wp-content/uploads/2018/05/animals-mantisshrimp-slide1-web.jpg" alt="Odontodactylus scyllarus e seus olhos">
+                    <p>
+                        E quando falamos isso, nem estamos nos referimos à aparência desses animais supercoloridos. Mas ao fato de possuírem <strong>o mais complexo sistema de visão de cores do mundo animal</strong>, pois enxergam 12 cores primárias, correspondentes aos 12 pigmentos distintos presentes em sua retina.
+                    </p>
+                    <p>
+                        Para se ter ideia do que isso significa, os olhos humanos, assim como os de outros primatas, possuem três tipos desses receptores - que correspondem à luz azul, verde e vermelha -, que nos permitem perceber o espectro de cores que vemos. Os cães contam com apenas dois tipos de cones (verde e azul), e é por isso que eles vêm tons de azul, verde e um pouco de amarelo. Muitos anfíbios, répteis, aves e insetos possuem quatro tipo de cones, o que significa que espécies dessas classes conseguem ver cores que o nosso cérebro é incapaz de processar. Algumas espécies específicas de borboletas e possivelmente pombos possuem cinco cones de percepção de cor, o que aumenta ainda mais a quantidade de pigmentos que eles são capazes de perceber.
+                    </p>
+                    <p>                    
+                        Como cada cone pode ver cerca de 100 cores, os estomatópodes são capazes de ver 10<sup>24</sup> cores, ou seja, <strong>1 septilhão de cores</strong>. Em comparação, o olho humano vê 10<sup>6</sup> cores, ou seja, 1 milhão de cores apenas. 
+                    </p>
+                </div>
+                <div>
+                </div>
+            </section>
+            <section>
+                <div class="heading-container">
+                    <h3>Visão além do alcance</h3>
+                </div>
+                <div class="text-box">
+                    <img class="right" src="https://i.ytimg.com/vi/eGuZifKr0h4/maxresdefault.jpg" alt="Olhos do Odontodactylus scyllarus em detalhe">
+                    <p>
+                        Achava que os olhos desses crustáceos eram incríveis apenas por isso? Pois saiba que, na seção acima, estávamos falando apenas a respeito dos cones sensíveis à luz. Além deles, os estomatópodes <strong>possuem outros quatro cones responsáveis pela filtragem da luz</strong>, o que lhes permite ver cores polarizadas e imagens multiespectrais. Sabe-se que <strong>sua visão é sensível à luz ultravioleta</strong>, mas ainda é desconhecido se ela pode distinguir a luz infravermelha.
+                    </p>
+                    <p>
+                        Essa é uma vantagem evolutiva importante quando se habita os fundos oceânicos e permite aos estomatópodes serem <strong>terríveis predadores</strong>...
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="heading-container">
+                    <h3><em>One Punch Lobster</em></h3>
+                </div>
+                <aside>Se quiser conferir a patada do bicho em ação, <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE" target="blank">veja este vídeo</a></aside>
+                <div class="text-box">
+                    <img class="left" src="https://www.guinnessworldrecords.com/Images/mantis-shrimp-with-clam_tcm25-567517.jpg" alt="Odontodactylus scyllarus ataca molusco protegido por concha">
+                    <p>
+                        Os estomatópodes são animais exclusivamente carnívoros, alimentando-se de camarões, caranguejos, moluscos, peixes e até mesmo outros da mesma ordem. São animais que apresentam comportamentos sociais muito variados, desde ameaças visuais contra predadores até comportamentos de côrte. De acordo com a anatomia da sua pata raptorial é possível distinguir entre dois grupos funcionais, as perfuradoras (<em>spearers</em>) ou as esmagadoras (<em>smashers</em>), sendo que cada um dos tipos apresenta sua própria variação comportamental e até mesmo de habitat.
+                    </p>
+                    <p>
+                        As maiores esmagadoras, tais como exemplares de <em>Odontodactylus scyllarus</em>, são capazes de desferir um dos mais rápidos e violentos golpes do reino animal, <strong>um soco que pode apresentar a velocidade de 80 quilômetros por hora</strong> - uma aceleração semelhante a um disparo de uma arma calibre .22! - e uma força de impacto de 60 kg/cm². Essa força esmagadora é a responsável pelo seu título de "lagosta-boxeadora" e é capaz de facilmente quebrar a carapaça de um caranguejo, as conchas duras e calcificadas de gastrópodes ou até mesmo quebrar o vidro reforçado de um aquário.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="heading-container">
+                    <h3>Blindadas pelo design</h3>
+                </div>
+                <div class="text-box">
+                    <img class="right" src="https://lh5.googleusercontent.com/proxy/Ih9MKsqYf5q8cRW4bqxQ_tcn3w5RlZq1jnmGHJNZ1MzhhqYE0bHOuSBDtCJJuwYVfCHotjKR2mWoHzvIeTcMoU3mbIy-7KHwCBQLutx4CbdH_JIvrpeIfqYCG3Lz80Nn__pL0yRk0Fg=w1200-h630-p-k-no-nu" alt="Odontodactylus scyllarus e detalhes das suas poderosas patas">
+                    <p>
+                        As patas responsáveis por esse golpe poderoso ficam escondidas sob a carapaça do animal, sempre prontas para atacar, como se fosse uma arma carregada. Aí, o boxeador solta os apêndices com tanta força, mas tanta força, que <strong>a energia liberada pelo ataque faz a água ao redor ferver</strong>. Só para dar uma ideia, imagine que, se seres humanos conseguissem atirar uma bola de baseball para cima com essa mesma força, a bolinha iria parar no espaço e entraria em órbita. É <em>muita</em> força mesmo.
+                    </p>
+                    <p>
+                        Só que (já dizia Newton) toda ação tem uma reação. Por isso, <strong>a lagostinha precisa ser também ultra resistente para sobreviver ao impacto que ela mesmo causa</strong> – e é justamente essa resistência que os cientistas estão estudando. Nos últimos oito anos, cientistas das universidades da California, de Riverside e de Purdue resolveram estudar o bicho, com o objetivo de desenvolver um novo material que seja praticamente indestrutível e que possa ser usado para fabricar armaduras.
+                    </p>
+                    <p>
+                        Eles analisaram a carapaça do estomatópode e descobriram que <strong>há duas razões para isso</strong>: a primeira é que a casca da lagosta é composta de cálcio, o mesmo material resistente dos ossos humanos. A segunda, e mais importante, é que esse cálcio todo está organizado de uma forma especial – <strong>uma estrutura</strong> conhecida como “padrão espinha de peixe”, <strong>que absorve o impacto e distribui a força recebida</strong>, evitando que o estomatópode se machuque.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Referências:</h3>
+                <ul>
+                    <li><a href="https://theoatmeal.com/comics/mantis_shrimp">Why the mantis shrimp is my new favorite animal</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Stomatopoda">Stomatopoda - Wikipédia</a></li>
+                    <li><a href="http://divemag.com/camarao-mantis-o-soco-mais-forte-da-natureza-foi-desvendado/">Camarão Mantis, o soco mais forte da natureza foi desvendado</a></li>
+                    <li><a href="https://super.abril.com.br/ciencia/lagosta-boxeadora-inspira-armaduras/">Lagosta boxeadora inspira armaduras</a></li>
+                    <li><a href="https://repositorio.ufpb.br/jspui/handle/tede/4113?locale=pt_BR">Stomatopoda (Crustacea - Hoplocarida) no nordeste brasileiro: morfometria como ferramenta taxonômica</a></li>
+                    <li><a href="https://ciencia.estadao.com.br/blogs/herton-escobar/cientistas-tentam-explicar-os-olhos-mais-complexos-do-reino-animal/">Crustáceo desafia cientistas com seus olhos complexos</a></li>
+                    <li><a href="https://exame.com/ciencia/camera-que-enxerga-cancer-foi-inspirada-em-olho-de-crustaceo/">Câmera que enxerga câncer foi inspirada em olho de crustáceo</a></li>
+                </ul>
+            </section>
           </article>
       </main>
+      <footer>Conteúdo adaptado e editado por <a href="https://pythaqua.github.io/">Renato Feitosa</a></footer>
   </body>
 </html>
