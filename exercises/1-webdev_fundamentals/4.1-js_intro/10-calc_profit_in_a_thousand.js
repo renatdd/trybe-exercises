@@ -1,3 +1,4 @@
+// Definindo variáveis
 let costValue = 2;
 let saleValue = 1;
 
