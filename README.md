@@ -21,9 +21,9 @@ The course consists of more than 1,500 hours divided into 39 blocks that cover c
 ### Bloco 3: Introdução à HTML e CSS
 - [x] Introdução - HTML & CSS
 - [x] HTML & CSS - Estruturas de página
-- [ ] HTML & CSS - Primeiros passos em CSS
-- [ ] HTML & CSS - Seletores e posicionamento
-- [ ] HTML Semântico
+- [x] HTML & CSS - Primeiros passos em CSS
+- [x] HTML & CSS - Seletores e posicionamento
+- [x] HTML Semântico
 - [ ] Projeto - Lessons Learned 
 
 ### Bloco 4: Introdução à JavaScript e Lógica de Programação
