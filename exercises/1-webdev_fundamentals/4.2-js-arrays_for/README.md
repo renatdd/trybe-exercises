@@ -3,7 +3,7 @@ Exercícios propostos para o dia 26/11/2020.
 Arquivos estão nomeados da seguinte maneira:  
 - ```numero_do_exercicio-descricao_curta.js```
 
-Exemplo para o exercício 6, o qual deve retornar o movimento que faz determinada peça do xadrez:
+Exemplo para o exercício 3, o qual deve retornar a média da soma de todos elementos em um _array_:
 - ```3-print_arrays_average.js```
 
 #### Tópicos abordados:
