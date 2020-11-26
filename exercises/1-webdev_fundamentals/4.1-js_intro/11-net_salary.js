@@ -1,3 +1,4 @@
+// Definindo variáveis
 let salarioBruto = 3000;
 let INSS;
 let IR;
