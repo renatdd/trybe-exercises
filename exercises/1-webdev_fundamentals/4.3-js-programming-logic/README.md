@@ -1,4 +1,4 @@
-### JavaScript - Array e loop For
+### JavaScript - Lógica de programação
 Exercícios propostos para o dia 27/11/2020.  
 Arquivos estão nomeados da seguinte maneira:  
 - ```numero_do_exercicio-descricao_curta.js```
