@@ -15,18 +15,17 @@ n = 5
 
 const star = '*';
 const squareSize = 10;
-let line; // Sets the line to be writen
 
 // First solution: using loops and printing data in every round
 for (let row = 0; row < squareSize; row += 1) {
-    line = star.repeat(squareSize);
+    let line = star.repeat(squareSize); // Sets the line to be writen
     console.log(line);
 }
 
 // // Second solution: using an array and separating data processing from output
 // let squareArray = [];
 // for (let row = 0; row < squareSize; row += 1) {
-//     line = star.repeat(squareSize);
+//     let line = star.repeat(squareSize); // Sets the line to be writen
 //     squareArray.push(line);
 // }
 // console.log(squareArray.join('\n'));

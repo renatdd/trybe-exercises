@@ -6,20 +6,15 @@ EXERCÍCIO:
 */
 
 const number = -1013;
-// Forces the number to positive
-const inputNumber = Math.abs(number);
+const inputNumber = Math.abs(number); // Forces the number to positive
 // Defines what would the array of divisors be if the number was a prime number
 const expectedPrimeDivisors = [1, inputNumber];
-// Stores the number's divisors
-let divisorsArray = [];
-// Stores remainders of divisions
-let remainder;
-// Sets whether it is a prime number or not
-let isPrime = false;
+const divisorsArray = []; // Stores the number's divisors
+let isPrime = false; // Sets whether it is a prime number or not
 
 // Finds the number's divisors
 for (let divisor = 0; divisor <= inputNumber; divisor += 1) {
-    remainder = inputNumber % divisor;
+    let remainder = inputNumber % divisor; // Stores remainders of divisions
     if (remainder == 0) {
         divisorsArray.push(divisor);
     }

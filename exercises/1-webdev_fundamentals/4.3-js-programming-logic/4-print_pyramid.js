@@ -14,9 +14,6 @@ n = 5
 const star = '*';
 const space = ' ';
 const pyramidBase = 6;
-let indentSize;
-let leftIndent; // Sets the indent string
-let line; // Sets the line to be writen
 
 for (let row = 1; row <= pyramidBase; row += 2) {
   // Checking whether it's the first loop and base is even.
@@ -25,9 +22,9 @@ for (let row = 1; row <= pyramidBase; row += 2) {
     row = 2;
   }
   // Calculating left indent
-  indentSize = (pyramidBase - row) / 2;
-  leftIndent = space.repeat(indentSize);
-  line = leftIndent + star.repeat(row);
+  let indentSize = (pyramidBase - row) / 2;
+  let leftIndent = space.repeat(indentSize); // Sets the indent string
+  let line = leftIndent + star.repeat(row);  // Sets the line to be writen
   console.log(line);
 }
 
