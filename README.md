@@ -14,28 +14,28 @@ The course consists of more than 1,500 hours divided into 39 blocks that cover c
 - [x] Unix & Bash - Parte 2
 
 ### Bloco 2: Git, GitHub e Internet
-- [x] Git & GitHub - O que é e para que serve
+- [x] [Git & GitHub - O que é e para que serve](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/2.1-git_and_github)
 - [x] Git & GitHub - Entendendo os comandos
 - [x] Internet - Entendendo como ela funciona
 
 ### Bloco 3: Introdução à HTML e CSS
-- [x] Introdução - HTML & CSS
-- [x] HTML & CSS - Estruturas de página
+- [x] [Introdução - HTML & CSS](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/3.1-html)
+- [x] [HTML & CSS - Estruturas de página](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/3.2-css)
 - [x] HTML & CSS - Primeiros passos em CSS
 - [x] HTML & CSS - Seletores e posicionamento
-- [x] HTML Semântico
-- [x] Projeto - Lessons Learned 
+- [x] [HTML Semântico](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/3.4-semantic_html)
+- [x] [Projeto - Lessons Learned ](https://pythaqua.github.io/projetos/bloco_3/)
 
 ### Bloco 4: Introdução à JavaScript e Lógica de Programação
-- [x] Introdução - JavaScript
-- [x] JavaScript - Primeiros passos
-- [x] JavaScript - Array e loop For
-- [x] JavaScript - Lógica de Programação e Algoritmos
-- [x] JavaScript - Objetos e funções
+- [x] [Introdução - JavaScript](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/4.1-js_intro)
+- [x] [JavaScript - Primeiros passos](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/4.1-js_intro)
+- [x] [JavaScript - Array e loop For](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/4.2-js-arrays_for)
+- [x] [JavaScript - Lógica de Programação e Algoritmos](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/4.3-js-programming-logic)
+- [x] [JavaScript - Objetos e funções](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/4.4-js-objects_functions)
 - [x] Projeto - Playground Functions
 
 ### Bloco 5: JavaScript: DOM, Eventos e Web Storage
-- [x] JavaScript - DOM e seletores
+- [x] [JavaScript - DOM e seletores](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/5.1-js-dom-selectors)
 - [x] JavaScript - Trabalhando com elementos
 - [ ] JavaScript - Eventos
 - [ ] JavaScript - Web Storage
