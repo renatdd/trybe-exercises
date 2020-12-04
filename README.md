@@ -30,13 +30,13 @@ The course consists of more than 1,500 hours divided into 39 blocks that cover c
 - [x] Introdução - JavaScript
 - [x] JavaScript - Primeiros passos
 - [x] JavaScript - Array e loop For
-- [ ] JavaScript - Lógica de Programação e Algoritmos
-- [ ] JavaScript - Objetos e funções
-- [ ] Projeto - Playground Functions
+- [x] JavaScript - Lógica de Programação e Algoritmos
+- [x] JavaScript - Objetos e funções
+- [x] Projeto - Playground Functions
 
 ### Bloco 5: JavaScript: DOM, Eventos e Web Storage
-- [ ] JavaScript - DOM e seletores
-- [ ] JavaScript - Trabalhando com elementos
+- [x] JavaScript - DOM e seletores
+- [x] JavaScript - Trabalhando com elementos
 - [ ] JavaScript - Eventos
 - [ ] JavaScript - Web Storage
 - [ ] Fundamentos - JavaScript - Projetos
