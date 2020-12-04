@@ -99,6 +99,13 @@
     leftContentDiv.appendChild(smallImage);
 
     // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+    let ulOneToTen = document.createElement('ul');
+    rightContentDiv.appendChild(ulOneToTen);
+    for (let index = 1; index <= 10; index += 1) {
+      let liElement = document.createElement('li');
+      liElement.textContent = index;
+      ulOneToTen.appendChild(liElement);
+    }
     // 9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
     /* 
         Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
