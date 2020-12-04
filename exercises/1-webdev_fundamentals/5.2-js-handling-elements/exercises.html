@@ -78,6 +78,10 @@
     mainContentDiv.appendChild(centerContentDiv);
 
     // 4 - Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+    let centerContentDivText = document.createElement('p');
+    centerContentDivText.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis aliquam consectetur placeat consequuntur, cum veniam distinctio error aut itaque eum tenetur iste at. At, obcaecati? Eos, dolor neque. Rerum.'; 
+    centerContentDiv.appendChild(centerContentDivText);
+
     // 5 - Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
     // 6 - Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
     // 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
