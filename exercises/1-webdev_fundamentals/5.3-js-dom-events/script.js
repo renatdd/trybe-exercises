@@ -97,3 +97,29 @@ Adicione a este botão o ID "btn-friday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
 createBtn('Sexta-feira');
+
+/* 
+Exercício 5:
+Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+*/
+// function 
+
+function changeFridayText() {
+  const fridays = [4, 11, 18, 25];
+  const fridayElements = document.querySelectorAll('.friday');
+  for (let index = 0; index < fridayElements.length; index += 1) {
+    const elementText = fridayElements[index].textContent;
+    let text = 'Sextou!';
+    if (elementText === text) {
+      text = fridays[index];
+    }
+    fridayElements[index].textContent = text;
+  }
+}
+
+function fridayBtnPress() {
+  const btn = document.querySelector('#btn-friday');
+  btn.addEventListener('click', changeFridayText);
+}
+fridayBtnPress();
