@@ -36,8 +36,8 @@ The course consists of more than 1,500 hours divided into 39 blocks that cover c
 
 ### Bloco 5: JavaScript: DOM, Eventos e Web Storage
 - [x] [JavaScript - DOM e seletores](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/5.1-js-dom-selectors)
-- [x] JavaScript - Trabalhando com elementos
-- [ ] JavaScript - Eventos
+- [x] [JavaScript - Trabalhando com elementos](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/5.2-js-handling-elements)
+- [x] [JavaScript - Eventos](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/5.3-js-dom-events)
 - [ ] JavaScript - Web Storage
 - [ ] Fundamentos - JavaScript - Projetos
 - [ ] Projeto - Arte com Pixels
