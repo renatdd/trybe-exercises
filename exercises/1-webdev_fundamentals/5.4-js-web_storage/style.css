@@ -1,14 +1,25 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 nav {
-    /* background-color: rgb(142, 119, 179); */
-    background-color: rgb(65, 25, 127);
-    
-    /* display: none; */
+  background-color: rgb(142, 119, 179);
+  /* background-color: rgb(65, 25, 127); */
+  display: none;
+  width: 100%;
+  /* position: fixed; */
+  /* top: 0; */
 }
 
 main {
-    width: 70%;
-    margin: auto;
+  width: 70%;
+  margin: 5% auto;
 }
+
+#header-img-container {
+  text-align: center;
+}
+
+#reader-logo {
+  width: 60%;
+}
+
