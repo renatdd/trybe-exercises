@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+nav {
+    /* background-color: rgb(142, 119, 179); */
+    background-color: rgb(65, 25, 127);
+    
+    /* display: none; */
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
