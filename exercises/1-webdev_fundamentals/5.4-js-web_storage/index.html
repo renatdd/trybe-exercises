@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/35c8956158.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav>
@@ -12,7 +13,7 @@
   </nav>
   <main>
     <div id='header-img-container'>
-      <img src="trybe-reader-logo.svg" alt="Trybe image logo">
+      <img id='reader-logo' src="trybe-reader-logo.svg" alt="Trybe image logo">
     </div>
     <article>
       <header>
@@ -47,6 +48,28 @@
       
     </article>
   </main>
+  <aside id='preferences-icon'>
+    <span class="fas fa-user-cog"></span>
+  </aside>
+  <aside id='preferences-menu'>
+    <div class='container'>
+      <span id='close-icon' class="fas fa-times"></span>
+      <table id='preferences-table'>
+        <tr>
+          <td><span class="fas fa-minus-square"></span></td>
+          <td><input type="text" name="" id="font-size"></td>
+          <td><span class="fas fa-plus-square"></span></td>
+        </tr>
+      </table>
+      <input type="range" min="1" max="30" value="15" class="slider" id="myRange">
+      <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="vw">VW</option>
+        <option value="audi" selected>Audi</option>
+      </select>
+    </div>
+  </aside>
   <footer>
     
   </footer>

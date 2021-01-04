@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 nav {
   background-color: rgb(142, 119, 179);
   /* background-color: rgb(65, 25, 127); */
@@ -12,6 +13,7 @@ nav {
 
 main {
   width: 70%;
+  min-width: 350px;
   margin: 5% auto;
 }
 
@@ -21,5 +23,59 @@ main {
 
 #reader-logo {
   width: 60%;
+  min-width: 300px;
 }
 
+#preferences-menu {
+  display: none;
+  background-color: rgb(142, 119, 179, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+}
+
+#preferences-icon {
+  color: rgb(102, 102, 102);
+  opacity: 0.2;
+  position: fixed;
+  font-size: 40px;
+  top: 2%;
+  right: 2%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#close-icon {
+  opacity: 0.2;
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  top: 2%;
+  left: 5%;
+}
+
+#preferences-table {
+  margin: auto;
+  padding-top: 40%;
+}
+
+#font-size {
+  width: 20px;
+  height: 5px;
+}
+
+table, td, tr {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.fa-minus-square, .fa-plus-square {
+  font-size: 36px;
+}
