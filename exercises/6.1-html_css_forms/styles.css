@@ -3,11 +3,13 @@ span {
 }
 
 .form-group {
-  margin: 10px 0;
+  margin: 10px auto;
   position: relative;
+  width: 80%;
 }
 
 .field-label {
+  font-family: Lato, sans-serif;
   float: left;
   top: 0;
   width: 20%;
@@ -25,10 +27,14 @@ main {
 }
 
 legend {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 2em;
   margin: 0 auto;
+  padding: 20px;
 }
 
-input[type='text'], input[type='email'], textarea {
+input[type='text'], input[type='email'], textarea, select {
   width: 70%;
   border-radius: 15px;
   padding: 10px;
