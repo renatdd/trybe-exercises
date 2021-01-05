@@ -3,70 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Submeta seu currículo para análise!</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form action="" method="get">
-    <fieldset>
-      <legend>Dados pessoais</legend>
-      <div>
-        <label for="name-input">Nome:</label>
-        <input type="text" name="fullname" id="name-input" maxlength="40" required>
-      </div>
-      <div>
-        <label for="email-input">E-mail:</label>
-        <input type="email" name="email" id="email-input" maxlength="50" required>
-      </div>
-      <div>
-        <label for="cpf-input">CPF:</label>
-        <input type="text" name="cpf" id="cpf-input" maxlength="11" required>
-      </div>
-      <div>
-        <label for="address-input">Endereço:</label>
-        <textarea name="address" id="address-input" cols="30" rows="10" maxlength="200" required></textarea>
-      </div>
-      <div>
-        <input type="radio" name="type-address" id="type-address-input-1" value="house">
-        <label for="type-address-input-1">Casa</label>
-        <input type="radio" name="type-address" id="type-address-input-2" value="apartment">
-        <label for="type-address-input-2">Apartamento</label>
-      </div>
-      <div>
-        <label for="city-input">Cidade:</label>
-        <input type="text" name="city" id="city-input" maxlength="28" required>
-        <label for="state-input">Estado:</label>
-        <select name="state" id="state-input" required></select>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Dados do último emprego</legend>
-      <div>
-        <label for="cv-abstract-input">Resumo do currículo:</label>
-        <textarea name="cv-abstract" id="cv-abstract-input" cols="30" rows="10" maxlength="1000" required></textarea>
-      </div>
-      <div>
-        <label for="role-input">Cargo:</label>
-        <input type="text" name="role" id="role-input" maxlength="40" required>
-      </div>
-      <div>
-        <label for="role-desc-input">Resumo do currículo:</label>
-        <textarea name="role-desc" id="role-desc-input" cols="30" rows="10" maxlength="500" required></textarea>
-      </div>
-      <div>
-        <label for="initial-date-input">Data de início:</label>
-        <input type="text" name="initial-date" id="initial-date-input" maxlength="10" required>
-        <span id='initial-date-validation'></span>
-      </div>
-      <div id="data-consolidation">
-
-      </div>
-      <div>
-        <button type="submit" id="submit-button">Submeter currículo</button>
-        <button type="reset" id="reset-button">Limpar currículo</button>
-      </div>
-    </fieldset>
-  </form>
+  <main>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <div class="form-group">
+          <label class="field-label" for="name-input">Nome:</label>
+          <input type="text" name="fullname" id="name-input" maxlength="40" required>
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="email-input">E-mail:</label>
+          <input type="email" name="email" id="email-input" maxlength="50" required>
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="cpf-input">CPF:</label>
+          <input type="text" name="cpf" id="cpf-input" maxlength="11" required>
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="address-input">Endereço:</label>
+          <textarea name="address" id="address-input" cols="30" rows="10" maxlength="200" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="type-address" id="type-address-input-1" value="house">
+          <label for="type-address-input-1">Casa</label>
+          <input type="radio" name="type-address" id="type-address-input-2" value="apartment">
+          <label for="type-address-input-2">Apartamento</label>
+        </div>
+        <div class="form-group">
+          <div class="half-col">
+            <label class="field-label" for="city-input">Cidade:</label>
+            <input type="text" name="city" id="city-input" maxlength="28" required>
+          </div>
+          <div class="half-col">
+            <label class="field-label" for="state-input">Estado:</label>
+            <select name="state" id="state-input" required></select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Dados do último emprego</legend>
+        <div class="form-group">
+          <label class="field-label" for="cv-abstract-input">Resumo do currículo:</label>
+          <textarea name="cv-abstract" id="cv-abstract-input" cols="30" rows="10" maxlength="1000" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="role-input">Cargo:</label>
+          <input type="text" name="role" id="role-input" maxlength="40" required>
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="role-desc-input">Descrição do cargo:</label>
+          <textarea name="role-desc" id="role-desc-input" cols="30" rows="10" maxlength="500" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="field-label" for="initial-date-input">Data de início:</label>
+          <input type="text" name="initial-date" id="initial-date-input" maxlength="10" required>
+          <span id='initial-date-validation'></span>
+        </div>
+        <div id="data-consolidation">
+          
+        </div>
+        <div>
+          <button type="submit" id="submit-button">Submeter currículo</button>
+          <button type="reset" id="reset-button">Limpar currículo</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

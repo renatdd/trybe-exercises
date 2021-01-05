@@ -1,3 +1,39 @@
 span {
   display: block;
 }
+
+.form-group {
+  margin: 10px 0;
+  position: relative;
+}
+
+.field-label {
+  float: left;
+  top: 0;
+  width: 20%;
+}
+
+.half-col {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+legend {
+  margin: 0 auto;
+}
+
+input[type='text'], input[type='email'], textarea {
+  width: 70%;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+fieldset {
+  margin: 10px;
+}
