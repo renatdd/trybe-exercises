@@ -5,7 +5,7 @@ span {
 .form-group {
   margin: 10px auto;
   position: relative;
-  width: 80%;
+  width: 95%;
 }
 
 .field-label {
@@ -29,7 +29,7 @@ main {
 legend {
   font-family: Lato, sans-serif;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0 auto;
   padding: 20px;
 }
@@ -41,5 +41,7 @@ input[type='text'], input[type='email'], textarea, select {
 }
 
 fieldset {
+  float: left;
   margin: 10px;
+  width: 45%;
 }
