@@ -39,6 +39,25 @@
         <select name="state" id="state-input" required></select>
       </div>
     </fieldset>
+    <fieldset>
+      <legend>Dados do último emprego</legend>
+      <div>
+        <label for="cv-abstract-input">Resumo do currículo:</label>
+        <textarea name="cv-abstract" id="cv-abstract-input" cols="30" rows="10" maxlength="1000" required></textarea>
+      </div>
+      <div>
+        <label for="role-input">Cargo:</label>
+        <input type="text" name="role" id="role-input" maxlength="40" required>
+      </div>
+      <div>
+        <label for="role-desc-input">Resumo do currículo:</label>
+        <textarea name="role-desc" id="role-desc-input" cols="30" rows="10" maxlength="500" required></textarea>
+      </div>
+      <div>
+        <label for="initial-date-input">Data de início:</label>
+        <input type="text" name="initial-date" id="initial-date-input" maxlength="10" required>
+      </div>
+    </fieldset>
   </form>
   <script src="script.js"></script>
 </body>
