@@ -7,6 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <label for="name-input">Nome:</label>
+      <input type="text" name="fullname" id="name-input" maxlength="40" required>
+      <label for="email-input">E-mail:</label>
+      <input type="email" name="email" id="email-input" maxlength="50" required>
+      <label for="cpf-input">CPF:</label>
+      <input type="text" name="cpf" id="cpf-input" maxlength="11" required>
+      <label for="address-input">Endereço:</label>
+      <textarea name="address" id="address-input" cols="30" rows="10" maxlength="200" required></textarea>
+      <input type="radio" name="type-address" id="type-address-input-1" value="house">
+      <label for="type-address-input-1">Casa</label>
+      <input type="radio" name="type-address" id="type-address-input-2" value="apartment">
+      <label for="type-address-input-2">Apartamento</label>
+      <label for="city-input">Cidade:</label>
+      <input type="text" name="city" id="city-input" maxlength="28" required>
+      <label for="state-input">Estado:</label>
+      <select name="state" id="state-input" required></select>
+
+    </fieldset>
+  </form>
   <script src="script.js"></script>
 </body>
 </html>
