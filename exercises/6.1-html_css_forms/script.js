@@ -3,6 +3,7 @@ const initialDateValidation = document.querySelector('#initial-date-validation')
 const submitButton = document.querySelector('#submit-button');
 const resetButton = document.querySelector('#reset-button');
 const statesSelect = document.querySelector('#state-input');
+const dataConsolitationDiv = document.querySelector('#data-consolidation');
 const states = {
   'Acre': 'AC',
   'Alagoas': 'AL',
@@ -98,9 +99,109 @@ function validateInputDate(event) {
   }
 }
 
+function propObjectToArray(propObject) {
+  const outputArray = [];
+  const objectKeys = Object.keys(propObject);
+  for (let index = 0; index < objectKeys.length; index += 1) {
+    const key = objectKeys[index];
+    const value = propObject[key];
+    outputArray.push({ key, value });
+  }
+  return outputArray;
+}
+
+function handleProperties(element, propObject) {
+  const properties = propObjectToArray(propObject);
+  for (let propertyIndex = 0; propertyIndex < properties.length; propertyIndex += 1) {
+    const property = properties[propertyIndex];
+    if (property.key === 'style') {
+      handleProperties(element.style, property.value);
+    } else {
+      element[property.key] = property.value;
+    }
+  }
+}
+
+function createNewElement(tag, propObject) {
+  const element = document.createElement(tag);
+  handleProperties(element, propObject);
+  return element;
+}
+
+function makeFieldSetTableTitle(fieldSet) {
+  const fieldSetTitleText = fieldSet.firstElementChild.innerText;
+  const titleTR = createNewElement('tr', {});
+  const titleTH = createNewElement('th', {colspan: 2, innerHTML: fieldSetTitleText});
+  titleTR.appendChild(titleTH);
+  return titleTR;
+}
+
+function makeElementRow(element) {
+  const row = createNewElement('tr', {});
+  const label = element.labels[0];
+  console.log(label);
+  if (label) {
+    const labelCol = createNewElement('td', {
+      innerHTML: label.innerText,
+    });
+    row.appendChild(labelCol);
+  }
+  const value = element.value;
+  const valueCol = createNewElement('td', {
+    innerHTML: value,
+  });
+  row.appendChild(valueCol);
+  return row;
+}
+
+function checkForUnconstrainedElement(element) {
+  return (element.type !== 'radio') && (element.type !== 'submit') && (element.type !== 'reset');
+}
+function checkForRadioRestrictions(element) {
+  return (element.type === 'radio') && (element.checked === true);
+}
+
+function checkForValidElement(element) {
+  const isUnconstrainedElement = checkForUnconstrainedElement(element);
+  const isValidRadioElement = checkForRadioRestrictions(element);
+  return isUnconstrainedElement || isValidRadioElement;
+}
+
+function makeElementsRows(fieldSet, consolidateTable) {
+  for (let index = 0; index < fieldSet.elements.length; index += 1) {
+    const element = fieldSet.elements[index];
+    const isValidElement = checkForValidElement(element);
+    if (isValidElement) {
+      const elementRow = makeElementRow(element);
+      consolidateTable.appendChild(elementRow);
+      console.log(element, isValidElement)
+    }
+  }
+}
+
+function consolidateFormData() {
+  const fieldSets = document.getElementsByTagName('fieldset');
+  const consolidateTable = createNewElement('table', {});
+  for (let index = 0; index < fieldSets.length; index += 1) {
+    const fieldSet = fieldSets[index];
+    fieldSetTitle = makeFieldSetTableTitle(fieldSet);
+    consolidateTable.appendChild(fieldSetTitle);
+    makeElementsRows(fieldSet, consolidateTable);
+  }
+  dataConsolitationDiv.appendChild(consolidateTable);
+}
+
 function setButtonsEvents() {
-  submitButton.addEventListener('click', function () {
+  submitButton.addEventListener('click', (event) => {
+    // Reference: https://developer.mozilla.org/pt-BR/docs/Web/API/Event/preventDefault
     validateInputDate();
+    dataConsolitationDiv.innerHTML = '';
+    consolidateFormData();
+    event.preventDefault();
+  });
+  resetButton.addEventListener('click', () => {
+    dataConsolitationDiv.innerHTML = '';
+    initialDateValidation.innerHTML = '';
   });
 }
 
