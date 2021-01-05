@@ -1,5 +1,7 @@
 const initialDateInput = document.querySelector('#initial-date-input');
 const initialDateValidation = document.querySelector('#initial-date-validation');
+const submitButton = document.querySelector('#submit-button');
+const resetButton = document.querySelector('#reset-button');
 const statesSelect = document.querySelector('#state-input');
 const states = {
   'Acre': 'AC',
@@ -85,7 +87,7 @@ const dateValidators = [
 
 function validateInputDate(event) {
   initialDateValidation.innerHTML = '';
-  const dateArray = event.target.value.split('/');
+  const dateArray = initialDateInput.value.split('/');
   for (let index = 0; index < dateValidators.length; index += 1) {
     const validatorObj = dateValidators[index];
     const validation = validatorObj.validation(dateArray);
@@ -96,9 +98,11 @@ function validateInputDate(event) {
   }
 }
 
-function setInitialDateEvent() {
-  initialDateInput.addEventListener('change', validateInputDate);
+function setButtonsEvents() {
+  submitButton.addEventListener('click', function () {
+    validateInputDate();
+  });
 }
 
 generateStatesOptions();
-setInitialDateEvent();
+setButtonsEvents();
