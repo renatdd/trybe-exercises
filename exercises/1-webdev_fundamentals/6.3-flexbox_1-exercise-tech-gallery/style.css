@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+header {
+  display: flex;
+  background-color: rgb( 50 , 52 , 51 );
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.description {
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  color: rgb( 50 , 52 , 51 );
+  padding: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.languages div {
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  box-shadow: 3px 3px rgb(214, 214, 214);
+  color: rgb(110, 110, 110);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 7px 5px;
+  padding: 20px 5px;
+}
+
+.languages div:hover {
+  box-shadow: 4px 4px 3px rgb(175, 175, 175);
+}
+
+hr {
+  width: 150px;
+  margin: 10px 0;
+  color: rgb(241, 241, 241);
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+  margin: 5px 0;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
