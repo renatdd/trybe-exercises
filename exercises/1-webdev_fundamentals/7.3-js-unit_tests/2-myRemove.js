@@ -16,4 +16,4 @@ function myRemove(arr, item) {
   return newArr;
 }
 
-// implemente seus testes aqui
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
