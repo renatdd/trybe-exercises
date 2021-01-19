@@ -67,18 +67,47 @@ const expectedResult = false;
 
 // Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
 
+/* 
+// First Solution
+
+const yearAlreadyExistsIn = (birthYear, yearsArray) => {
+  return typeof yearsArray !== 'undefined' && yearsArray.includes(`${birthYear}`);
+}
+
+const valuesAreUnique = array => array.every(year => year === 1);
+
+const authorUnique = () => {
+  const birthYearsCounter = {};
+  books.forEach((book) => {
+    const authorBirthYear = book.author.birthYear;
+    const yearAlreadyExists = yearAlreadyExistsIn(authorBirthYear, Object.keys(birthYearsCounter));
+    if (yearAlreadyExists) {
+      birthYearsCounter[authorBirthYear] += 1;
+    } else {
+      birthYearsCounter[authorBirthYear] = 1;
+    }
+  });
+  return valuesAreUnique(Object.values(birthYearsCounter));
+};
+*/
+
+// Simpler Solution: using more HOFs
+const ascending = (value1, value2) => value1 - value2;
+
+const valuesAreUniqueIn = (array) => {
+  let previousValue = 0;
+  return !array.some((value) => {
+    const isSameAsPrevious = value === previousValue;
+    previousValue = value;
+    return isSameAsPrevious;
+  });
+};
+
 const authorUnique = () => {
   const birthYears = [];
-  books.forEach((book) => {
-    birthYears.push(book.author.birthYear);
-  });
-  birthYears.sort((year1, year2) => year1 - year2);
-  let initialYear = 0;
-  birthYears.some((year) => {
-    const isSame = year === initialYear;
-    initialYear = year;
-    return !isSame;
-  });
+  books.forEach(book => birthYears.push(book.author.birthYear));
+  birthYears.sort(ascending);
+  return valuesAreUniqueIn(birthYears);
 };
 
 assert.strictEqual(authorUnique(), expectedResult);
