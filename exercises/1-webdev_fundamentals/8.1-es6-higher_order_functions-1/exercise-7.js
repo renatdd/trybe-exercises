@@ -95,7 +95,7 @@ const authorUnique = () => {
 const ascending = (value1, value2) => value1 - value2;
 
 const valuesAreUniqueIn = (array) => {
-  let previousValue = 0;
+  let previousValue;
   return !array.some((value) => {
     const isSameAsPrevious = value === previousValue;
     previousValue = value;
