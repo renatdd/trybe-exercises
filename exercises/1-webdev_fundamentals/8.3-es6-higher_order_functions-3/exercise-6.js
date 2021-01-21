@@ -15,7 +15,7 @@ const studentAverage = () => {
   return students.reduce((arrayAcc, currentStudent, index) => {
     const gradesAverage = grades[index].reduce(
       (gradesAcc, currentGrades) => gradesAcc + currentGrades
-      ) / grades[index].length;
+    ) / grades[index].length;
     arrayAcc.push({ name: currentStudent, average: gradesAverage });
     return arrayAcc;
   }, []);
