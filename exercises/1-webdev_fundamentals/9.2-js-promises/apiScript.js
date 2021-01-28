@@ -1,4 +1,5 @@
 const API_URL = 'https://icanhazdadjoke.com/';
+const jokeContainer = document.querySelector('#jokeContainer');
 
 const fetchJoke = () => {
   // Adicionar lógica aqui!
@@ -9,7 +10,9 @@ const fetchJoke = () => {
 
   fetch(API_URL, myObject)
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(({ joke }) => jokeContainer.innerText = joke);
 };
 
-window.onload = () => fetchJoke();
+window.onload = () => {
+  fetchJoke();
+};
