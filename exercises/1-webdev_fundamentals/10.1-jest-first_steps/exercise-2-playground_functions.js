@@ -41,24 +41,15 @@ function techList(array, name) {
   }, []);
 }
 
-// Desafio 13
-function countCupsOfWater(context) {
-  let number = parseInt(context.currentValue, 10);
-  context.totalWater += number;
-  return context;
-}
-
 function hydrate(text) {
   // Referência para o código de regex no JS (MDN web docs):
   // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/match
-  let numberPattern = /\d+/g;
-  let numbersInText = text.match(numberPattern);
-  let cupsText = 'copo';
-  const contextObject = loopThroughIn({ input: numbersInText, totalWater: 0 }, countCupsOfWater);
-  if (contextObject.totalWater > 1) {
-    cupsText += 's'
-  }
-  return `${contextObject.totalWater} ${cupsText} de água`;
+  const numberPattern = /\d+/g;
+  const numbersInText = text.match(numberPattern);
+  const totalWaterCups = numbersInText.reduce((accumulator, currentNumber) => {
+    return parseInt(currentNumber, 10) + accumulator;
+  }, 0);
+  return `${totalWaterCups} copo${totalWaterCups > 1 ? 's' : ''} de água`;
 }
 
 module.exports = {
