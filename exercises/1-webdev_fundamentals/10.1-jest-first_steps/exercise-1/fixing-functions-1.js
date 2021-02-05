@@ -1,11 +1,3 @@
-const greetPeople = (people) => {
-  const greeting = 'Hello ';
-  const output = [];
-
-  for (const person in people) {
-    output.push(greeting + people[person]);
-  }
-  return output;
-};
+const greetPeople = people => people.map(person => `Hello ${person}`)
 
 module.exports = greetPeople;
