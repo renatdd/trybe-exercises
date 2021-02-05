@@ -14,4 +14,3 @@ describe('tdd-2', () => {
     expect(output).toEqual(expected);
   });
 });
-
