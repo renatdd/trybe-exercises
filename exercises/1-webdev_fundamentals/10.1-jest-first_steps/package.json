@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll --verbose"
   }
 }
