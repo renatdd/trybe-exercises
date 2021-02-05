@@ -81,5 +81,4 @@ const searchEmployee = (...args) => {
   return employee[detail];
 };
 
-
 module.exports = searchEmployee;
