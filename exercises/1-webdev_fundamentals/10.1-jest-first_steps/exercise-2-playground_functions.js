@@ -1,31 +1,25 @@
 // General loop function
-function loopThroughIn(contextObject, applyFunction) {
-  for (let index in contextObject.input) {
-    if (Object.prototype.hasOwnProperty.call(contextObject.input, index)) {
-      contextObject.currentIndex = index;
-      contextObject.currentValue = contextObject.input[index];
-      contextObject = applyFunction(contextObject);
-    }
-  }
-  return contextObject;
-}
+// function loopThroughIn(contextObject, applyFunction) {
+//   for (let index in contextObject.input) {
+//     if (Object.prototype.hasOwnProperty.call(contextObject.input, index)) {
+//       contextObject.currentIndex = index;
+//       contextObject.currentValue = contextObject.input[index];
+//       contextObject = applyFunction(contextObject);
+//     }
+//   }
+//   return contextObject;
+// }
 
 // Desafio 9
-function translate(context) {
-  let value = context.currentValue;
-  if (context.currentValue in context.dictionary) {
-    value = context.dictionary[context.currentValue];
-  }
-  context.translation += value;
-  return context;
-}
 
-function getTranslation(text, dictionary) {
-  const contextObject = loopThroughIn(
-    { input: text, dictionary, translation: '' },
-    translate);
-  return contextObject.translation;
-}
+const getTranslation = (text, dictionary) => {
+  return text.split('').reduce((translatedText, char) => {
+    if (Object.keys(dictionary).includes(char)) {
+      char = dictionary[char];
+    }
+    return translatedText + char;
+  }, '');
+};
 
 function encode(text) {
   const dictionary = { a: 1, e: 2, i: 3, o: 4, u: 5 };
