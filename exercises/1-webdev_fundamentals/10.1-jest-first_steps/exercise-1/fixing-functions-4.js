@@ -1,10 +1,5 @@
-function secondThirdSmallest(array) {
-  let results = []
-  array.sort(function (x, y) {
-      return x - y;
-  });
-  results = [array[1], array[2]];
-  return results;
-};
+const secondThirdSmallest = array => array.sort(
+  (number1, number2) => number1 - number2
+  ).splice(1, 2);
 
 module.exports = secondThirdSmallest;
