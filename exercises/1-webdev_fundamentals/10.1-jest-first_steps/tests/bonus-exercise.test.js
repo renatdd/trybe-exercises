@@ -35,12 +35,12 @@ describe('searchEmployee function implementation tests', () => {
 
   it('Throws "0 argumento foi inserido" if function is called with no arguments',
     () => {expect(() => { searchEmployee(); })
-      .toThrow(new Error('0 argumento foi inserido: apenas um id e uma informação devem ser fornecidos para realização da pesquisa.'));
+      .toThrow(new Error('0 argumento foi inserido: um id e uma informação devem ser fornecidos para realização da pesquisa.'));
   });
 
   it('Throws "1 argumento foi inserido" if function is called with only one argument',
   () => {expect(() => { searchEmployee('8579-6'); })
-    .toThrow(new Error('1 argumento foi inserido: apenas um id e uma informação devem ser fornecidos para realização da pesquisa.'));
+    .toThrow(new Error('1 argumento foi inserido: um id e uma informação devem ser fornecidos para realização da pesquisa.'));
   });
 
   it('Throws "# argumentos foram inseridos" if function is called with more than two arguments',

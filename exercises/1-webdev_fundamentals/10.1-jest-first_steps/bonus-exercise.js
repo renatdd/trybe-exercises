@@ -57,7 +57,7 @@ const searchEmployeeValidation = {
   checkForValidArguments(args) {
     if (args.length !== 2) {
       throw new Error(
-        `${args.length} argumento${args.length > 1 ? 's' : ''} ${args.length > 1 ? 'foram' : 'foi'} inserido${args.length > 1 ? 's' : ''}: apenas um id e uma informação devem ser fornecidos para realização da pesquisa.`);
+        `${args.length} argumento${args.length > 1 ? 's' : ''} ${args.length > 1 ? 'foram' : 'foi'} inserido${args.length > 1 ? 's' : ''}: ${args.length > 1 ? 'apenas ' : ''}um id e uma informação devem ser fornecidos para realização da pesquisa.`);
       }
     },
   checkForValidEmployee(employee) {
