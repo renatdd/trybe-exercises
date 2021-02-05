@@ -33,3 +33,22 @@ describe('encode function tests', () => {
     expect(encode(input).length).toBe(expected.length);
   });
 });
+
+describe('decode function tests', () => {
+  it('decode is a function', () => {
+    expect(typeof decode).toBe('function');
+  });
+  let input = '12345';
+  let expected = 'aeiou';
+  it(`decode("${input}") returns "${expected}"`, () => {
+    expect(decode(input)).toBe(expected);
+  });
+  input = 'B1l231 5rs4';
+  expected = 'Baleia urso';
+  it(`decode("${input}") returns "${expected}"`, () => {
+    expect(decode(input)).toBe(expected);
+  });
+  it(`decode("${input}").length equals to "${expected}".length`, () => {
+    expect(decode(input).length).toBe(expected.length);
+  });
+});
