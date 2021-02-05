@@ -1,23 +1,13 @@
 const removeVowels = (word) => {
-  const characters = word.split('');
-  const results = [];
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
   let substitute = 1;
-
-  for (let i = 0; i < characters.length; i += 1) {
-    if (
-      characters[i] === 'a' ||
-      characters[i] === 'o' ||
-      characters[i] === 'i' ||
-      characters[i] === 'e' ||
-      characters[i] === 'u'
-    ) {
-      results.push(substitute);
+  return word.split('').reduce((newWord, char) => {
+    if (vowels.includes(char)) {
+      char = substitute;
       substitute += 1;
-    } else {
-      results.push(characters[i]);
     }
-  }
-  return results.join('');
+    return newWord + char;
+  }, '');
 };
 
 module.exports = removeVowels;
