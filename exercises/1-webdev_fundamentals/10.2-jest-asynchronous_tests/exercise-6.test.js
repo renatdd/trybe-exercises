@@ -40,13 +40,13 @@ const findAnimalsByAge = (age) => {
 const getAnimal = (name) => {
   // Adicione o código aqui.
   return findAnimalByName(name)
-    .then(animal => animal);
+  .then(animal => animal);
 };
 
 const getAnimalsByAge = (age) => {
   // Adicione o código aqui.
   return findAnimalsByAge(age)
-    .then(animal => animal);
+  .then(animal => animal);
 };
 // ---------------------
 
