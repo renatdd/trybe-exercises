@@ -6,7 +6,7 @@ This repository is intended for exercises performed in [Trybe](https://www.betry
 
 The course consists of more than 1,500 hours divided into 39 blocks that cover comprehensive contents in fundamentals of web development, front-end development, back-end development and computer science. Below you can find their descriptions and check my current progress through them. :rocket:
 
-### Bloco 1: Unix, Bash e Shell Script 
+### Bloco 1: Unix, Bash e Shell Script
 - [x] Setup
 - [x] Fundamentos do Desenvolvimento Web
 - [x] Introdução - Unix & Shell
@@ -38,46 +38,46 @@ The course consists of more than 1,500 hours divided into 39 blocks that cover c
 - [x] [JavaScript - DOM e seletores](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/5.1-js-dom-selectors)
 - [x] [JavaScript - Trabalhando com elementos](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/5.2-js-handling-elements)
 - [x] [JavaScript - Eventos](https://github.com/pythaqua/trybe-exercises/tree/main/exercises/1-webdev_fundamentals/5.3-js-dom-events)
-- [ ] JavaScript - Web Storage
-- [ ] Fundamentos - JavaScript - Projetos
-- [ ] Projeto - Arte com Pixels
-- [ ] Projeto - Lista de tarefas
-- [ ] (Bônus) Projeto - Meme Generator
-- [ ] (Bônus) Projeto - Adivinhe a Cor
-- [ ] (Bônus) Projeto - Carta Misteriosa
+- [x] JavaScript - Web Storage
+- [x] Fundamentos - JavaScript - Projetos
+- [x] Projeto - Arte com Pixels
+- [x] Projeto - Lista de tarefas
+- [x] (Bônus) Projeto - Meme Generator
+- [x] (Bônus) Projeto - Adivinhe a Cor
+- [x] (Bônus) Projeto - Carta Misteriosa
 
 ### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
-- [ ] HTML & CSS - Forms
-- [ ] Bibliotecas JavaScript e Frameworks CSS
-- [ ] Introdução - CSS Flexbox
-- [ ] CSS Flexbox - Parte 1
-- [ ] CSS Flexbox - Parte 2
-- [ ] CSS Responsivo - Mobile First
-- [ ] Projeto - Página inicial do Facebook
+- [x] HTML & CSS - Forms
+- [x] Bibliotecas JavaScript e Frameworks CSS
+- [x] Introdução - CSS Flexbox
+- [x] CSS Flexbox - Parte 1
+- [x] CSS Flexbox - Parte 2
+- [x] CSS Responsivo - Mobile First
+- [x] Projeto - Página inicial do Facebook
 
 ### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
-- [ ] JavaScript ES6 - let, const, arrow functions e template literals
-- [ ] JavaScript ES6 - Objects
-- [ ] Testes unitários em JavaScript
-- [ ] Projeto - JavaScript Testes Unitários
+- [x] JavaScript ES6 - let, const, arrow functions e template literals
+- [x] JavaScript ES6 - Objects
+- [x] Testes unitários em JavaScript
+- [x] Projeto - JavaScript Testes Unitários
 
 ### Bloco 8: Higher Order Functions do JavaScript ES6
-- [ ] JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
-- [ ] JavaScript ES6 - Higher Order Functions - map e filter
-- [ ] JavaScript ES6 - Higher Order Functions - reduce
-- [ ] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
-- [ ] Projeto - Zoo functions
+- [x] JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [x] JavaScript ES6 - Higher Order Functions - map e filter
+- [x] JavaScript ES6 - Higher Order Functions - reduce
+- [x] JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+- [x] Projeto - Zoo functions
 
 ### Bloco 9: JavaScript Assíncrono e Promises
-- [ ] JavaScript Assíncrono e Callbacks
-- [ ] JavaScript Promises
-- [ ] Projeto - Carrinho de Compras
+- [x] JavaScript Assíncrono e Callbacks
+- [x] JavaScript Promises
+- [x] Projeto - Carrinho de Compras
 
 ### Bloco 10: Testes automatizados com Jest
-- [ ] Primeiros passos no Jest
-- [ ] Jest - Testes Assíncronos
-- [ ] Jest - Simulando comportamentos
-- [ ] Projeto - Jest Assíncrono e Mocking
+- [x] Primeiros passos no Jest
+- [x] Jest - Testes Assíncronos
+- [x] Jest - Simulando comportamentos
+- [x] Projeto - Jest Assíncrono e Mocking
 
 ### Bloco 11: Introdução à React
 - [ ] Introdução - Front-end
