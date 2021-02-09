@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
