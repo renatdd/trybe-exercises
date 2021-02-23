@@ -2,8 +2,7 @@ import React from 'react';
 import Pokemon from './Pokemon';
 import pokemons from './data';
 
-
-class Pokedex extends React.Component {
+export default class Pokedex extends React.Component {
   render() {
     const pokemonTypes = pokemons.map(({type}) => type);
     const uniqueTypes = [...new Set(pokemonTypes)];
@@ -24,5 +23,3 @@ class Pokedex extends React.Component {
     );
   }
 }
-
-export default Pokedex;
