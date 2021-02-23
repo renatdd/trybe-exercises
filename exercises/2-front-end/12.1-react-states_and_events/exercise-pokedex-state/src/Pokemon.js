@@ -1,8 +1,8 @@
-import { Component } from 'react';
+import React from 'react';
 import pokemonIcon from './Icons';
 
 
-class Pokemon extends Component {
+class Pokemon extends React.Component {
   render() {
     const { name, type, image, averageWeight } = this.props.pokemon;
     return (
