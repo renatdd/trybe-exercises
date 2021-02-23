@@ -1,0 +1,99 @@
+.TypeButtonContainer {
+  background-color: rgb(191, 12, 12);
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100vh;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.TypeButtonContainer > div {
+  background-color: rgb(27, 87, 240);
+  width: 18%;
+  height: 10vh;
+  border-radius: 2vh;
+  margin: 0.2vh 0.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: inset 0 -1em 1em rgb(1, 72, 196);
+}
+
+.Pokemon {
+  background-color: white;
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+}
+
+.Pokemon div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 0.1;
+  justify-items: center;
+  align-self: center;
+  padding: 0 0 0 10px;
+  font-size: 12px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.Pokemon div:last-of-type {
+  display: flex;
+  align-self: center;
+}
+
+.Pokedex {
+  margin: 0 10vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  background-image: url('https://raw.githubusercontent.com/bloodstorms/pokedex/master/img/pokedex/background.png');
+  background-size: cover;
+  background-position: fixed;
+  background-attachment: fixed;
+}
+
+header {
+  background-image: url('https://raw.githubusercontent.com/bloodstorms/pokedex/master/img/pokedex/background.png');
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 5vh 0 0 0;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  margin: 30vh 0;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+fieldset {
+  display: flex;
+  width: 15vw;
+}
+
+legend {
+  justify-self: center;
+  padding: 0 10px;
+}
+
+.PokemonImage {
+  align-self: end;
+}
