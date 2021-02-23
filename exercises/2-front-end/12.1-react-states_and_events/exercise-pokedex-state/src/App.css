@@ -47,7 +47,12 @@ label {
   align-self: center;
 }
 
-.Pokedex {
+.Pokedex-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.Pokedex-display {
   margin: 0 10vw;
   display: flex;
   flex-wrap: wrap;
