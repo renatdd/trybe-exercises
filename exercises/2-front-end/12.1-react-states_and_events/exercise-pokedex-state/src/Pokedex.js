@@ -6,6 +6,7 @@ export default class Pokedex extends React.Component {
     super();
     this.allPokemonsFilter = 'All';
     this.nextPokemonFilter = 'Next';
+    this.pokemonTypes = [...new Set(props.pokemons.map(({type}) => type))];
     this.disableNextButton = this.disableNextButton.bind(this);
     this.handleEvent = this.handleEvent.bind(this);
     this.displayNext = this.displayNext.bind(this);
@@ -16,10 +17,10 @@ export default class Pokedex extends React.Component {
     };
   }
 
-  get pokemonTypes() {
-    const types = this.props.pokemons.map(({type}) => type);
-    return [...new Set(types)];
-  } 
+  // get pokemonTypes() {
+  //   const types = this.props.pokemons.map(({type}) => type);
+  //   return [...new Set(types)];
+  // } 
 
   displayNext(event) {
     let { displayIndex } = this.state;
