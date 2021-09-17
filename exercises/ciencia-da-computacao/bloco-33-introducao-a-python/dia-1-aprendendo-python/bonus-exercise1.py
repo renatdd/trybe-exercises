@@ -5,3 +5,5 @@ from functools import reduce
 def get_lowest_number_of_list(input_list):
     # return min(input_list) or ...
     return reduce(lambda x, y: x if x < y else y, input_list)
+
+# Ver o método sort() -> input_list.sort()

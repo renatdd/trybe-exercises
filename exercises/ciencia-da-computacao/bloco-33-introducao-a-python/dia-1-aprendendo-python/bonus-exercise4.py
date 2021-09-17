@@ -62,3 +62,5 @@ def calculate_sale(*args, MAX_DISCOUNT_LITERS_ABOVE = 20):
     )
 
     return fuel_liters_sold * price * (1 - discount)
+
+# Eu acho que ficou meio complexo esse exercicio
